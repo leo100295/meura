@@ -1,0 +1,168 @@
+# Site de Receitas Chinesas: Yakisoba e Frango Xadrez
+
+Aqui está um código HTML completo para um site de receitas chinesas com duas receitas populares: Yakisoba e Frango Xadrez, incluindo seus modos de preparo e contexto cultural.
+
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabores da China - Receitas Autênticas</title>
+    <style>
+        :root {
+            --primary-color: #e74c3c;
+            --secondary-color: #c0392b;
+            --accent-color: #f1c40f;
+            --dark-color: #2c3e50;
+            --light-color: #ecf0f1;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            margin-top: 2rem;
+        }
+        
+        h3 {
+            color: var(--dark-color);
+        }
+        
+        .recipe-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 2rem 0;
+            overflow: hidden;
+        }
+        
+        .recipe-header {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 1.5rem;
+        }
+        
+        .recipe-content {
+            padding: 1.5rem;
+        }
+        
+        .recipe-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        
+        .ingredients, .instructions {
+            margin-bottom: 1.5rem;
+        }
+        
+        ul, ol {
+            padding-left: 1.5rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .history {
+            background-color: var(--light-color);
+            padding: 1.5rem;
+            border-left: 4px solid var(--accent-color);
+            margin: 1.5rem 0;
+        }
+        
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .recipe-image {
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Sabores da China</h1>
+            <p>Receitas autênticas e suas histórias culturais</p>
+        </div>
+    </header>
+    
+    <main class="container">
+        <section id="yakisoba">
+            <div class="recipe-card">
+                <div class="recipe-header">
+                    <h2>Yakisoba</h2>
+                </div>
+                <img src="https://images.unsplash.com/photo-1550583724-b2692b85b150" alt="Yakisoba" class="recipe-image">
+                <div class="recipe-content">
+                    <div class="history">
+                        <h3>História e Cultura</h3>
+                        <p>O Yakisoba (焼きそば) é um prato de origem japonesa que se popularizou na China através da influência cultural entre os dois países. Apesar do nome japonês, a versão chinesa adaptou-se aos ingredientes locais. O prato chegou ao Japão no início do século XX através de imigrantes chineses e depois retornou à China com adaptações. Na culinária chinesa, o yakisoba é especialmente popular em festivais e como comida de rua, representando a fusão cultural entre China e Japão.</p>
+                    </div>
+                    
+                    <div class="ingredients">
+                        <h3>Ingredientes (4 porções)</h3>
+                        <ul>
+                            <li>400g de macarrão para yakisoba (ou espaguete)</li>
+                            <li>200g de carne de porco em tiras finas (pode substituir por frango ou carne bovina)</li>
+                            <li>1 cenoura média cortada em julienne</li>
+                            <li>1 cebola média cortada em tiras</li>
+                            <li>1 pimentão verde ou vermelho cortado em tiras</li>
+                            <li>2 xícaras de repolho cortado fino</li>
+                            <li>2 colheres de sopa de óleo de gergelim</li>
+                            <li>3 colheres de sopa de molho shoyu</li>
+                            <li>2 colheres de sopa de molho de ostras</li>
+                            <li>1 colher de sopa de vinagre de arroz</li>
+                            <li>1 colher de chá de açúcar</li>
+                            <li>Sal e pimenta a gosto</li>
+                            <li>Cebolinha picada para decorar</li>
+                            <li>Gergelim torrado para decorar (opcional)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="instructions">
+                        <h3>Modo de Preparo</h3>
+                        <ol>
+                            <li>Cozinhe o macarrão conforme as instruções da embalagem, mas deixe-o al dente. Escorra e reserve.</li>
+                            <li>Em uma wok ou frigideira grande, aqueça o óleo de gergelim em fogo alto.</li>
+                            <li>Adicione a carne e refogue até dourar. Tempere com um pouco de sal
